@@ -6,7 +6,7 @@ public class BayviewGlenPools {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        //review of scanner
+       
         //scanner in = new scanner(System.in);
         // ^ gets the input from the user
 
@@ -42,10 +42,10 @@ public class BayviewGlenPools {
         double volume = (deepEndLength*deepEndDepth*width) + (shallowEndLength*shallowEndDepth*width) 
         + (shallowEndDepth*width*transitionLength) + (0.5*transitionHeight*transitionLength*width);
         
-
+        //rounds the volume 
         double waterNinety = 1000*(volume*0.9);
         double waterNinetyRounded = Math.round(waterNinety*100)/100.0;
-        //rounds the volume 
+        
 
         System.out.println("You need " + waterNinetyRounded+ "L to keep your water at 90%");
 
@@ -55,13 +55,13 @@ public class BayviewGlenPools {
         ((transitionSlope*width) + (2*(transitionHeight*transitionLength)/2) + (2*(transitionLength*shallowEndDepth))); 
 
         
-
+         //rounds the surface area 
         double roundedSA = Math.round(SurfaceArea*100)/100.0;
-        //rounds the surface area 
+       
 
         System.out.println("You will need: " + roundedSA + "m^2 of lining.");
 
-        //price 
+       
         double linerCost = roundedSA*price;
         
         
